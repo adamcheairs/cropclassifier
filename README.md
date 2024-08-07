@@ -51,10 +51,10 @@ Please refer to the documentation of the respective libraries for installation i
 
 The CropClassifier project is licensed under the [MIT License](LICENSE).
 
-Feel free to contribute to the project by submitting issues or pull requests. Your contributions are greatly appreciated!
+Feel free to contribute to the project by submitting issues or pull requests!
 
 ## Acknowledgments
 
-Thank you to [spMohnaty](https://github.com/spMohanty/PlantVillage-Dataset/tree/master/raw/color), a GitHub user, for generously providing the open-source dataset of plant leaves. Their extensive collection of healthy and diseased plant leaf images served as the foundation for my project.
+Thank you to [spMohnaty](https://github.com/spMohanty/PlantVillage-Dataset/tree/master/raw/color) for the open-source dataset of plant leaves.
 
 Thank you to the open-source community and the developers of TensorFlow, NumPy, and other libraries used in this project.
