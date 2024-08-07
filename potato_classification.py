@@ -39,7 +39,6 @@ def load_images_and_labels(healthy_dir, unhealthy_dir):
 
 healthy_images, unhealthy_images, labels = load_images_and_labels(HEALTHY_DIR, UNHEALTHY_DIR)
 
-# Create the model
 model = tf.keras.Sequential([
     tf.keras.layers.Conv2D(32, (3, 3), activation='relu', input_shape=(256, 256, 3)),
     tf.keras.layers.MaxPooling2D((2, 2)),
@@ -52,13 +51,10 @@ model = tf.keras.Sequential([
     tf.keras.layers.Dense(1, activation='sigmoid')
 ])
 
-# Compile the model
 model.compile(optimizer='adam',
               loss='binary_crossentropy',
               metrics=['accuracy'])
 
-# Train the model
 model.fit(np.concatenate([healthy_images, unhealthy_images]), labels, epochs=10)
 
-# Save the model
 model.save('potato_model.h5')
